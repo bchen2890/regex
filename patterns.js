@@ -1,4 +1,4 @@
-export const patterns = {
+const patterns = {
   naturalNumbers: /^\d+$/,
   wholeNumbers: /^-?\d+$/,
   positiveDecimalNumbers: /^\d*(\.\d+)?$/,
@@ -14,3 +14,5 @@ export const patterns = {
   ipv4:/(?:25[0-5]|2[0-4]\d|[01]\d{2}|\d{1,2})(?:.(?:25[0-5]|2[0-4]\d|[01]\d{2}|\d{1,2})){3}/,
   ipv6:/(?:[A-Fa-f0-9]){0,4}(?: ?:? ?(?:[A-Fa-f0-9]){0,4}){0,7}/
 }
+
+module.exports = patterns;
