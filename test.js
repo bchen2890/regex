@@ -6,7 +6,7 @@ function matchLog(text, match) {
 }
 
 function log(text) {
-    console.log('\x1b[33m%s\x1b[0m', text);
+    console.log('\n \x1b[33m%s\x1b[0m', text, '\n');
 }
 
 log("naturalNumbers")
@@ -76,4 +76,27 @@ matchLog('ABC@example.com', patterns.email);
 matchLog('example@example.', patterns.email);
 matchLog('apple.pie@example.dot', patterns.email);
 matchLog('apple-pie@example.dot', patterns.email);
+
+log("dateYYYY_MM_dd");
+matchLog('2000/09/09', patterns.dateYYYY_MM_dd);
+matchLog('20/08/21', patterns.dateYYYY_MM_dd);
+matchLog('1990-09-09', patterns.dateYYYY_MM_dd);
+matchLog('15-01-1999', patterns.dateYYYY_MM_dd);
+matchLog('06/11/1867', patterns.dateYYYY_MM_dd);
+
+log("datedd_MM_YYYY");
+matchLog('2000/09/09', patterns.datedd_MM_YYYY);
+matchLog('20/08/21', patterns.datedd_MM_YYYY);
+matchLog('1990-09-09', patterns.datedd_MM_YYYY);
+matchLog('15-01-1999', patterns.datedd_MM_YYYY);
+matchLog('06/11/1867', patterns.datedd_MM_YYYY);
+
+
+log("time_HH_MM_SS");
+matchLog('09:09:12', patterns.time_HH_MM_SS);
+matchLog('20:08:43', patterns.time_HH_MM_SS);
+matchLog('19:59:37', patterns.time_HH_MM_SS);
+matchLog('15-01-46', patterns.time_HH_MM_SS);
+matchLog('00:00:00', patterns.time_HH_MM_SS);
+
 
