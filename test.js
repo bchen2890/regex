@@ -44,3 +44,36 @@ matchLog('-234', patterns.decimalNumbers);
 matchLog('a1', patterns.decimalNumbers);
 matchLog('hello', patterns.decimalNumbers);
 matchLog('Hi', patterns.decimalNumbers);
+
+log("alphabets");
+matchLog('1234', patterns.alphabets);
+matchLog('a1', patterns.alphabets);
+matchLog('hello world', patterns.alphabets);
+matchLog('hello', patterns.alphabets);
+matchLog('Hi', patterns.alphabets);
+matchLog('ABC', patterns.alphabets);
+matchLog('UwU', patterns.alphabets);
+matchLog('example@', patterns.alphabets);
+matchLog('ABC@example.com', patterns.alphabets);
+
+log("alphanumeric");
+matchLog('1234', patterns.alphanumeric);
+matchLog('a1', patterns.alphanumeric);
+matchLog('hello', patterns.alphanumeric);
+matchLog('Hi', patterns.alphanumeric);
+matchLog('ABC', patterns.alphanumeric);
+matchLog('24Hours', patterns.alphanumeric);
+matchLog('Apple Pie', patterns.alphanumeric);
+matchLog('example@', patterns.alphanumeric);
+matchLog('ABC@example.com', patterns.alphanumeric);
+
+log("email");
+matchLog('1234@', patterns.email);
+matchLog('a1@example', patterns.email);
+matchLog('hello@email.', patterns.email);
+matchLog('Hi', patterns.email);
+matchLog('ABC@example.com', patterns.email);
+matchLog('example@example.', patterns.email);
+matchLog('apple.pie@example.dot', patterns.email);
+matchLog('apple-pie@example.dot', patterns.email);
+
