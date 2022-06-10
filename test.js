@@ -99,4 +99,30 @@ matchLog('19:59:37', patterns.time_HH_MM_SS);
 matchLog('15-01-46', patterns.time_HH_MM_SS);
 matchLog('00:00:00', patterns.time_HH_MM_SS);
 
+log("httpUrl");
+matchLog('https://www.google.es/', patterns.httpUrl);
+matchLog('http://nodejs.dev/', patterns.httpUrl);
+matchLog('ftp://user:password@host:2000', patterns.httpUrl);
+matchLog('mailto:name@email.com', patterns.httpUrl);
+matchLog('file://host/path', patterns.httpUrl);
+matchLog('hello', patterns.httpUrl);
 
+log("htmlTags");
+matchLog('<custom>', patterns.htmlTags);
+matchLog('<h1>', patterns.htmlTags);
+matchLog('<div>', patterns.htmlTags);
+matchLog('hello', patterns.htmlTags);
+
+log("ipv4");
+matchLog('192.168.5.19', patterns.ipv4);
+matchLog('50b2:4355:0000:0000:43c3:b23b:102a', patterns.ipv4);
+matchLog('50b2:982o:0000:0000:43c3:b23b:102a', patterns.ipv4);
+matchLog('1929.123.1.12', patterns.ipv4);
+matchLog('hello', patterns.ipv4);
+
+log("ipv6");
+matchLog('192.168.5.19', patterns.ipv6);
+matchLog('50b2:4355:0000:0000:43c3:b23b:102a', patterns.ipv6);
+matchLog('50b2:982o:0000:0000:43c3:b23b:102a', patterns.ipv6);
+matchLog('1929.123.1.12', patterns.ipv6);
+matchLog('hello', patterns.ipv6);
