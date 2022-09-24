@@ -126,3 +126,10 @@ matchLog('50b2:4355:0000:0000:43c3:b23b:102a', patterns.ipv6);
 matchLog('50b2:982o:0000:0000:43c3:b23b:102a', patterns.ipv6);
 matchLog('1929.123.1.12', patterns.ipv6);
 matchLog('hello', patterns.ipv6);
+
+log("time_HH_MM");
+matchLog('192.168', patterns.time_HH_MM);
+matchLog('1:29', patterns.time_HH_MM);
+matchLog('hello', patterns.time_HH_MM);
+matchLog('13:40', patterns.time_HH_MM);
+matchLog('19:38:25', patterns.time_HH_MM);
