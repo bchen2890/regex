@@ -133,3 +133,10 @@ matchLog('1:29', patterns.time_HH_MM);
 matchLog('hello', patterns.time_HH_MM);
 matchLog('13:40', patterns.time_HH_MM);
 matchLog('19:38:25', patterns.time_HH_MM);
+
+log("password");
+matchLog('123', patterns.password);
+matchLog('hello123', patterns.password);
+matchLog('helloWorld', patterns.password);
+matchLog('3hello2world1', patterns.password);
+matchLog('3hello2World1', patterns.password);
